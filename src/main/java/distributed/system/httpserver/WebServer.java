@@ -75,7 +75,7 @@ public class WebServer {
 		
 		long startTime = System.nanoTime();
 		
-		byte [] requestBytes = exchange.getRequestBody().
+		byte [] requestBytes = exchange.getRequestBody().readAllBytes();
 		byte [] responseBytes = calculateResponse(requestBytes);
 		
 		long finishTime = System.nanoTime();
