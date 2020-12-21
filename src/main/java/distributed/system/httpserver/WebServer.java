@@ -20,7 +20,7 @@ public class WebServer {
 	private final int port;
 	private HttpServer server;
 	
-	private static void main(String [] args) {
+	public static void main(String [] args) {
 		int serverPort = 8080;
 		if(args.length == 1) {
 			serverPort = Integer.parseInt(args[0]);
